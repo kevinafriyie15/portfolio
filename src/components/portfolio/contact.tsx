@@ -22,12 +22,12 @@ export function Contact() {
               <div>
                 <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3.5 py-1.5 text-sm font-medium">
                   <MapPin className="size-4" aria-hidden />
-                  Kumasi, Ghana — open to opportunities
+                  Kumasi, Ghana · Open to opportunities
                 </span>
                 <h2 className="mt-5 font-display text-3xl font-semibold leading-tight tracking-tight text-balance sm:text-4xl md:text-[2.75rem] md:leading-[1.15]">
-                  Let’s build a sustainable future — together.
+                  Let’s build a sustainable future together.
                 </h2>
-                <p className="mt-4 max-w-xl text-base leading-relaxed text-primary-foreground/85 md:text-lg">
+                <p className="mt-4 max-w-xl font-serif text-base leading-relaxed text-primary-foreground/85 md:text-lg">
                   Whether it is climate advocacy, youth programs, research
                   support, or event organization, I would love to hear how we
                   can collaborate.
@@ -115,7 +115,7 @@ export function Contact() {
                       Location
                     </span>
                     <span className="block text-sm font-medium">
-                      Kumasi, Ashanti Region — Ghana
+                      Kumasi, Ashanti Region, Ghana
                     </span>
                   </span>
                 </li>

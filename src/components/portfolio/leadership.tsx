@@ -16,7 +16,7 @@ const ROLES = [
   {
     icon: ScrollText,
     role: 'General Secretary (7th)',
-    org: 'ENSSA — KNUST',
+    org: 'ENSSA, KNUST',
     description:
       'Leading the Environmental Science Students’ Association as its 7th General Secretary, coordinating communication and student affairs.',
     badge: '2025/26',
@@ -48,7 +48,7 @@ const ROLES = [
   {
     icon: GraduationCap,
     role: 'Member, IAESTE HelpDesk',
-    org: 'IAESTE — KNUST',
+    org: 'IAESTE, KNUST',
     description:
       'Supporting fellow students in accessing international internships and exchange opportunities.',
     badge: '2025/26',
@@ -93,9 +93,9 @@ export function Leadership() {
                 <h3 className="mt-1.5 font-display text-2xl font-semibold md:text-3xl">
                   Peer Mentor of the Year 2025
                 </h3>
-                <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground md:text-base">
+                <p className="mt-2 max-w-2xl font-serif text-sm leading-relaxed text-muted-foreground md:text-base">
                   Awarded in recognition of outstanding commitment to mentorship
-                  and leadership in Environmental Science at KNUST — a reflection
+                  and leadership in Environmental Science at KNUST, a reflection
                   of a genuine belief in lifting others while climbing.
                 </p>
               </div>
@@ -124,7 +124,7 @@ export function Leadership() {
                       {item.org}
                     </p>
                   </div>
-                  <p className="text-sm leading-relaxed text-muted-foreground">
+                  <p className="font-serif text-sm leading-relaxed text-muted-foreground">
                     {item.description}
                   </p>
                 </CardContent>
@@ -134,7 +134,7 @@ export function Leadership() {
         </div>
 
         <Reveal delay={0.1}>
-          <p className="mx-auto mt-10 flex max-w-2xl items-center justify-center gap-2.5 text-center text-sm text-muted-foreground">
+          <p className="mx-auto flex max-w-2xl items-center justify-center gap-2.5 text-center font-serif text-sm text-muted-foreground">
             <Leaf className="size-4 shrink-0 text-primary" aria-hidden />
             Every role, one thread: creating room for young people to lead on
             climate and environment.

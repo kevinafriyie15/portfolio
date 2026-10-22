@@ -15,8 +15,8 @@ const EXPERIENCE = [
   {
     icon: Landmark,
     organization: 'Kumasi Metropolitan Assembly',
-    role: 'Environmental Health Intern — Administrative',
-    period: 'Nov 2025 – Dec 2025',
+    role: 'Environmental Health Intern (Administrative)',
+    period: 'Nov 2025 to Dec 2025',
     location: 'Adum, Kumasi, Ghana',
     highlights: [
       'Performed administrative tasks, including data entry and records management supporting environmental health services.',
@@ -30,7 +30,7 @@ const EXPERIENCE = [
     organization:
       'Kumasi Centre for Collaborative Research in Tropical Medicine (KCCR)',
     role: 'Research Assistant Intern',
-    period: 'Sep 2025 – Oct 2025',
+    period: 'Sep 2025 to Oct 2025',
     location: 'Kumasi, Ashanti Region, Ghana',
     highlights: [
       'Gained hands-on laboratory experience at a leading tropical medicine research centre, including DNA extraction.',
@@ -41,8 +41,8 @@ const EXPERIENCE = [
   {
     icon: ShieldCheck,
     organization: 'Environmental Protection Authority',
-    role: 'Health Intern — Administrative & Compliance',
-    period: 'Oct 2024 – Dec 2024',
+    role: 'Health Intern (Administrative & Compliance)',
+    period: 'Oct 2024 to Dec 2024',
     location: 'Ahodwo, Ghana',
     highlights: [
       'Supported administrative and compliance-related tasks in a national environmental regulatory institution.',
@@ -107,7 +107,7 @@ export function Experience() {
                       {job.highlights.map((point) => (
                         <li
                           key={point}
-                          className="flex items-start gap-2 text-sm leading-relaxed text-muted-foreground"
+                          className="flex items-start gap-2 font-serif text-sm leading-relaxed text-muted-foreground"
                         >
                           <ChevronRight
                             className="mt-0.5 size-4 shrink-0 text-primary"

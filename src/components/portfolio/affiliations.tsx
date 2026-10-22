@@ -1,7 +1,7 @@
 import { Sprout } from 'lucide-react'
 
 const AFFILIATIONS = [
-  'ENSSA — KNUST',
+  'ENSSA, KNUST',
   'Youth-NREG',
   'Enactus Fellow',
   'IAESTE HelpDesk',

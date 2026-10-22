@@ -35,11 +35,11 @@ const FOCUS_AREAS = [
 ]
 
 const QUICK_FACTS = [
-  { icon: MapPin, label: 'Based in', value: 'Kumasi, Ashanti Region — Ghana' },
+  { icon: MapPin, label: 'Based in', value: 'Kumasi, Ashanti Region, Ghana' },
   {
     icon: GraduationCap,
     label: 'Studying',
-    value: 'BSc. Environmental Science, KNUST (2024–2027)',
+    value: 'BSc. Environmental Science, KNUST (2024 to 2027)',
   },
   {
     icon: Target,
@@ -62,7 +62,7 @@ export function About() {
 
         <div className="grid items-start gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
           <Reveal delay={0.05}>
-            <div className="space-y-5 text-base leading-relaxed text-muted-foreground md:text-lg">
+            <div className="space-y-5 font-serif text-base leading-relaxed text-muted-foreground md:text-lg">
               <p>
                 I am an organized and purpose-driven environmental science
                 professional with strong interests in youth advocacy,
@@ -89,9 +89,6 @@ export function About() {
                 strengthened my organizational abilities, attention to detail,
                 communication skills, and my capacity to work effectively across
                 multidisciplinary environments.
-              </p>
-              <p className="font-display text-xl italic text-foreground">
-                — Kevin Afriyie
               </p>
             </div>
           </Reveal>
@@ -147,7 +144,7 @@ export function About() {
                   <h3 className="font-display text-xl font-semibold">
                     {area.title}
                   </h3>
-                  <p className="text-sm leading-relaxed text-muted-foreground">
+                  <p className="font-serif text-sm leading-relaxed text-muted-foreground">
                     {area.description}
                   </p>
                 </CardContent>

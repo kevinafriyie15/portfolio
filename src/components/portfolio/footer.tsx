@@ -1,13 +1,14 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Leaf, Linkedin, Mail, MapPin } from 'lucide-react'
 
 const FOOTER_LINKS = [
-  { id: 'about', label: 'About' },
-  { id: 'experience', label: 'Experience' },
-  { id: 'leadership', label: 'Leadership' },
-  { id: 'skills', label: 'Skills' },
-  { id: 'education', label: 'Education' },
-  { id: 'contact', label: 'Contact' },
+  { href: '/about', label: 'About' },
+  { href: '/experience', label: 'Experience' },
+  { href: '/leadership', label: 'Leadership' },
+  { href: '/skills', label: 'Skills' },
+  { href: '/education', label: 'Education' },
+  { href: '/contact', label: 'Contact' },
 ]
 
 export function Footer() {
@@ -18,7 +19,7 @@ export function Footer() {
       <div className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6 lg:px-8 xl:px-8">
         <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
           <div>
-            <a href="#home" className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-3">
               <span className="relative size-11 overflow-hidden rounded-full ring-2 ring-primary/30 ring-offset-2 ring-offset-background">
                 <Image
                   src="/kevin-avatar.jpg"
@@ -36,8 +37,8 @@ export function Footer() {
                   Environmental Scientist · Climate Advocate
                 </span>
               </span>
-            </a>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
+            </Link>
+            <p className="mt-4 max-w-xs font-serif text-sm leading-relaxed text-muted-foreground">
               Empowering young people to participate in decisions around natural
               resources, climate action, and sustainable development.
             </p>
@@ -49,13 +50,13 @@ export function Footer() {
             </h3>
             <ul className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2.5">
               {FOOTER_LINKS.map((link) => (
-                <li key={link.id}>
-                  <a
-                    href={`#${link.id}`}
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
                     className="text-sm text-muted-foreground transition-colors hover:text-primary"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -88,7 +89,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2.5 text-sm text-muted-foreground">
                 <MapPin className="size-4 text-primary" aria-hidden />
-                Kumasi, Ashanti Region — Ghana
+                Kumasi, Ashanti Region, Ghana
               </li>
             </ul>
           </div>

@@ -42,3 +42,22 @@ Work Log:
 Stage Summary:
 - Site is browser-verified interactive: navigation, theme toggle, mobile menu, scroll animations, marquee, contact links all work
 - Final state: lint clean, dev log clean, task complete
+
+---
+Task ID: 3
+Agent: Z.ai Code (main orchestrator)
+Task: Convert portfolio to multi-page routing, League Spartan + serif typography, remove em dashes, Vercel preparation
+
+Work Log:
+- Routing: navbar/footer now use Next.js Link + usePathname (active page highlight); removed use-active-section hook; added PagePager (prev/next) navigation under each section page
+- New routes: /about, /experience, /leadership, /skills, /education, /contact (each with its own Metadata title via "%s | Kevin Afriyie" template), plus styled not-found.tsx
+- Home (/) restructured: Hero + Affiliations marquee + new ExploreCards grid (6 linked cards) + Contact CTA band; hero buttons now Link to /contact and /experience
+- Navbar + Footer moved into RootLayout shell (flex min-h-screen flex-col, footer mt-auto) so every page shares them
+- Typography: Fraunces replaced with League_Spartan (font-display, titles/headings); Source_Serif_4 added (font-serif) and applied to all paragraph/description/bullet content; Geist stays as UI sans
+- Em/en dash purge: removed every em dash and en dash from user-facing copy and comments (headings, stats, locations, org names, contact heading, date ranges like "2024 to 2027"); verified with ripgrep, zero matches in src/
+- Vercel prep: package.json build script simplified to "next build" and start to "next start" (removed standalone cp commands); removed output:"standalone" from next.config.ts; metadataBase now uses NEXT_PUBLIC_SITE_URL env; added sitemap.ts and robots.ts (app Router metadata routes, env-aware URLs), deleted static public/robots.txt; added .env.example
+- Fixed Next.js warning: data-scroll-behavior="smooth" on <html>
+- Verification (agent-browser): /, /about, /experience, /leadership, /skills, /education, /contact, and 404 all render; title template correct per page; fonts confirmed via getComputedStyle (League Spartan h1, Source Serif 4 paragraphs); pager flow About->Experience->Leadership works; mobile menu navigates pages and closes sheet; dark mode works on subpages; sitemap.xml + robots.txt serve correctly; lint clean; dev.log clean
+
+Stage Summary:
+- Site is now a 7-page routed portfolio (home + 6 sections + 404), Vercel-ready with standard build scripts, env-based site URL, sitemap and robots; typography = League Spartan headings / Source Serif 4 paragraphs / Geist UI; zero em or en dashes in content

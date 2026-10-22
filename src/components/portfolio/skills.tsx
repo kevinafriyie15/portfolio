@@ -81,7 +81,7 @@ export function Skills() {
                     <h3 className="font-display text-xl font-semibold">
                       {group.title}
                     </h3>
-                    <p className="mt-1.5 text-sm text-muted-foreground">
+                    <p className="mt-1.5 font-serif text-sm text-muted-foreground">
                       {group.description}
                     </p>
                   </div>

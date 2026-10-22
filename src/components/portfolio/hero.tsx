@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Award, Leaf, MapPin, ScrollText } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -17,7 +18,7 @@ const fadeUp = {
 const STATS = [
   { value: '3', label: 'Internships across government, research & regulatory bodies' },
   { value: '6+', label: 'Leadership & service roles on campus and beyond' },
-  { value: '2025', label: 'Peer Mentor of the Year — Environmental Science' },
+  { value: '2025', label: 'Peer Mentor of the Year, Environmental Science' },
 ]
 
 export function Hero() {
@@ -31,7 +32,7 @@ export function Hero() {
       </div>
 
       <div className="mx-auto grid w-full max-w-6xl items-center gap-14 px-4 pb-16 pt-14 sm:px-6 md:pt-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 lg:pb-24 lg:pt-24 xl:px-8">
-        {/* Left — intro */}
+        {/* Left, intro */}
         <div className="flex flex-col items-start gap-6">
           <motion.div variants={fadeUp} initial="hidden" animate="show" custom={0}>
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-3.5 py-1.5 text-sm font-medium text-primary">
@@ -55,11 +56,11 @@ export function Hero() {
             initial="hidden"
             animate="show"
             custom={2}
-            className="max-w-xl text-lg leading-relaxed text-muted-foreground md:text-xl"
+            className="max-w-xl font-serif text-lg leading-relaxed text-muted-foreground md:text-xl"
           >
             General Secretary of Environmental Science at KNUST, organizing youth
             voices for natural resources, climate action, and sustainable
-            development — one initiative at a time.
+            development, one initiative at a time.
           </motion.p>
 
           <motion.div
@@ -70,7 +71,7 @@ export function Hero() {
             className="flex flex-wrap items-center gap-3"
           >
             <Button asChild size="lg" className="rounded-full px-6">
-              <a href="#contact">Get in touch</a>
+              <Link href="/contact">Get in touch</Link>
             </Button>
             <Button
               asChild
@@ -78,7 +79,7 @@ export function Hero() {
               variant="outline"
               className="rounded-full px-6"
             >
-              <a href="#experience">Explore my journey</a>
+              <Link href="/experience">Explore my journey</Link>
             </Button>
           </motion.div>
 
@@ -90,7 +91,7 @@ export function Hero() {
             className="flex items-center gap-2 text-sm text-muted-foreground"
           >
             <MapPin className="size-4 text-primary" aria-hidden />
-            Kumasi, Ashanti Region — Ghana
+            Kumasi, Ashanti Region, Ghana
           </motion.p>
 
           <motion.dl
@@ -114,7 +115,7 @@ export function Hero() {
           </motion.dl>
         </div>
 
-        {/* Right — portrait */}
+        {/* Right, portrait */}
         <motion.div
           initial={{ opacity: 0, scale: 0.94, y: 24 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -143,7 +144,7 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Floating badge — award */}
+          {/* Floating badge, award */}
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
@@ -160,7 +161,7 @@ export function Hero() {
             </span>
           </motion.div>
 
-          {/* Floating badge — leadership */}
+          {/* Floating badge, leadership */}
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
