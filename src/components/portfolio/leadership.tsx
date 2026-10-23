@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import {
   Award,
   CalendarCheck,
@@ -97,6 +98,41 @@ export function Leadership() {
                   Awarded in recognition of outstanding commitment to mentorship
                   and leadership in Environmental Science at KNUST, a reflection
                   of a genuine belief in lifting others while climbing.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </Reveal>
+
+        {/* Mentorship in action photo */}
+        <Reveal delay={0.05}>
+          <Card className="mb-8 overflow-hidden md:mb-10">
+            <CardContent className="grid items-center gap-6 p-6 md:grid-cols-2 md:gap-10 md:p-8">
+              <figure className="relative">
+                <Image
+                  src="/kevin-mentees.jpg"
+                  alt="Kevin Afriyie standing with his mentees at KNUST"
+                  width={1280}
+                  height={960}
+                  className="h-auto w-full rounded-2xl border shadow-lg shadow-primary/10"
+                />
+                <figcaption className="absolute bottom-3 left-3 rounded-full bg-background/85 px-3.5 py-1.5 text-xs font-medium text-foreground shadow-sm backdrop-blur">
+                  With my mentees, KNUST
+                </figcaption>
+              </figure>
+              <div>
+                <span className="text-xs font-semibold uppercase tracking-widest text-primary">
+                  Mentorship in action
+                </span>
+                <h3 className="mt-1.5 font-display text-2xl font-semibold md:text-3xl">
+                  Lifting others while climbing
+                </h3>
+                <p className="mt-3 font-serif text-sm leading-relaxed text-muted-foreground md:text-base">
+                  Mentorship is the part of leadership I treasure most. Here I
+                  am with my mentees, walking together through coursework,
+                  career questions, and the everyday realities of student life.
+                  Watching them grow into confident leaders is the quiet win
+                  behind every role I hold.
                 </p>
               </div>
             </CardContent>
