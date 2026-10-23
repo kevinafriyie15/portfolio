@@ -52,3 +52,13 @@ prompt
 server.log
 # Skills directory
 /skills/
+# sandbox-only infra (never publish)
+.env
+.zscripts/
+Caddyfile
+db/
+download/
+examples/
+mini-services/
+dev.log
+*.zbak
