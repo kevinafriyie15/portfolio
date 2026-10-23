@@ -62,3 +62,6 @@ examples/
 mini-services/
 dev.log
 *.zbak
+upload/
+tests/
+worklog.md
