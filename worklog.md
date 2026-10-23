@@ -80,3 +80,16 @@ Work Log:
 Stage Summary:
 - Site is multi-page, em-dash-free, League Spartan headings + serif body, Vercel-ready (env-based site URL, sitemap, robots)
 - GitHub remote wired; awaiting PAT from user to push main branch
+
+---
+Task ID: 5
+Agent: Z.ai Code (main)
+Task: Push portfolio code to GitHub repo kevinafriyie15/portfolio using user-provided PAT
+
+Work Log:
+- User provided GitHub Personal Access Token (classic, repo scope)
+- Stored credentials via credential.helper store (~/.git-credentials, chmod 600)
+- Pushed main branch with upstream tracking
+
+Stage Summary:
+- Code live on https://github.com/kevinafriyie15/portfolio
